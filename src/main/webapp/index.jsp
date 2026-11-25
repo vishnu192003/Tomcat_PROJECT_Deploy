@@ -15,40 +15,40 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: #fafafa;
-      color: #111827;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f4f6f9;
+      color: #1e293b;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
     }
 
+    /* Classic, authoritative corporate header */
     header {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 80px 24px 48px;
-      text-align: left;
-      border-bottom: 1px solid #e5e7eb;
+      background-color: #0b2545;
+      color: #ffffff;
+      padding: 64px 20px 76px;
+      text-align: center;
+      border-bottom: 4px solid #1d63dc;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      letter-spacing: -0.03em;
-      color: #09090b;
-      margin-bottom: 12px;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.125rem;
-      color: #6b7280;
-      font-weight: 400;
+      font-size: 1.1rem;
+      color: #cbd5e1;
       max-width: 600px;
+      margin: 0 auto;
+      font-weight: 400;
     }
 
     .container {
-      max-width: 1140px;
-      margin: 48px auto 96px;
-      padding: 0 24px;
+      max-width: 1160px;
+      margin: -36px auto 70px;
+      padding: 0 20px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 24px;
@@ -56,90 +56,80 @@
 
     .course-card {
       background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 32px;
+      border: 1px solid #e2e8f0;
+      border-top: 3px solid #1d63dc;
+      border-radius: 10px;
+      padding: 32px 28px;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      transition: all 0.25s ease;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .course-card:hover {
-      border-color: #111827;
-      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.08);
       transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.09);
     }
 
     .course-icon {
-      width: 48px;
-      height: 48px;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
       border-radius: 12px;
-      background: #f3f4f6;
-      color: #111827;
+      background-color: #eff6ff;
+      color: #1d63dc;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
-      margin-bottom: 24px;
-      transition: all 0.25s ease;
+      font-size: 26px;
+      transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     .course-card:hover .course-icon {
-      background: #111827;
+      background-color: #1d63dc;
       color: #ffffff;
     }
 
     .course-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: #111827;
-      letter-spacing: -0.01em;
-      margin-bottom: 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 12px;
     }
 
     .course-desc {
       font-size: 0.95rem;
-      color: #4b5563;
+      color: #475569;
       margin-bottom: 28px;
       line-height: 1.6;
       flex-grow: 1;
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
+      display: inline-block;
       text-decoration: none;
-      background: #111827;
+      background-color: #1d63dc;
       color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 0.875rem;
+      padding: 11px 26px;
+      border-radius: 6px;
+      font-size: 0.95rem;
       font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    .btn::after {
-      content: '→';
-      margin-left: 8px;
-      transition: transform 0.2s ease;
+      transition: background-color 0.2s ease;
+      align-self: center;
     }
 
     .btn:hover {
-      background: #374151;
-    }
-
-    .btn:hover::after {
-      transform: translateX(3px);
+      background-color: #154bb0;
     }
 
     @media (max-width: 600px) {
-      header {
-        padding: 56px 20px 36px;
-      }
       header h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
+      }
+      .container {
+        margin-top: -24px;
       }
     }
   </style>
