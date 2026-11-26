@@ -5,24 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Softronix IT Training Courses</title>
   
-  <!-- Modern Geometric & Sans Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com" rel="stylesheet">
-  
-  <!-- Working FontAwesome CDN for Crisp Icons -->
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cloudflare.com">
   
   <style>
     :root {
-      --bg-primary: #FAFAFA;
-      --surface: #FFFFFF;
-      --obsidian: #09090B;
-      --text-main: #18181B;
-      --text-muted: #52525B;
-      --border-light: #E4E4E7;
-      --accent: #2563EB;
-      --accent-soft: #EFF6FF;
+      --bg-page: #F8F8F7;        /* Soft Warm Alabaster */
+      --bg-card: #FFFFFF;        /* Pure Crisp White */
+      --header-bg: #141413;      /* Deep Charcoal */
+      --text-primary: #18181B;   /* Soft Black */
+      --text-secondary: #636366; /* Muted Slate Gray */
+      --border-subtle: #E6E6E3;  /* Hairline Stone Border */
+      --border-hover: #A1A1AA;   /* Subtle Focus Border */
+      --icon-bg: #F3F3F1;        /* Neutral Warm Gray */
+      --btn-bg: #18181B;         /* Minimal Charcoal Button */
+      --btn-hover: #323236;      /* Soft Hover Tint */
     }
 
     * {
@@ -33,162 +32,143 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-primary);
-      color: var(--text-main);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Elite Minimalist Header */
+    /* Calm & Minimal Header */
     header {
-      background-color: var(--obsidian);
+      background-color: var(--header-bg);
       color: #FFFFFF;
-      padding: 88px 24px 104px;
+      padding: 80px 24px 96px;
       text-align: center;
-      position: relative;
-      background-image: radial-gradient(circle at 50% 0%, #1E293B 0%, #09090B 70%);
+      border-bottom: 1px solid #27272A;
     }
 
     .badge {
       display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #93C5FD;
-      background: rgba(37, 99, 235, 0.15);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      padding: 6px 14px;
+      color: #D4D4D8;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 5px 14px;
       border-radius: 999px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     header h1 {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 14px;
-      line-height: 1.2;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+      color: #FAFAFA;
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: #A1A1AA;
-      max-width: 540px;
+      max-width: 520px;
       margin: 0 auto;
       font-weight: 400;
     }
 
-    /* Clean Grid Layout */
+    /* Clean Grid */
     .container {
-      max-width: 1180px;
-      margin: -48px auto 96px;
+      max-width: 1160px;
+      margin: -44px auto 90px;
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-      gap: 24px;
+      gap: 20px;
     }
 
-    /* Minimalist Luxury Cards */
+    /* Stable & Ultra-Minimal Cards */
     .course-card {
-      background: var(--surface);
-      border: 1px solid var(--border-light);
-      border-radius: 16px;
-      padding: 36px 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 32px 28px;
       text-align: left;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      /* No movement, only subtle border transition */
+      transition: border-color 0.2s ease;
     }
 
     .course-card:hover {
-      transform: translateY(-4px);
-      border-color: #CBD5E1;
-      box-shadow: 0 20px 32px -12px rgba(9, 9, 11, 0.08);
+      border-color: var(--border-hover);
     }
 
     .course-icon {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 24px;
-      border-radius: 12px;
-      background-color: var(--bg-primary);
-      border: 1px solid var(--border-light);
-      color: var(--obsidian);
+      width: 44px;
+      height: 44px;
+      margin-bottom: 22px;
+      border-radius: 10px;
+      background-color: var(--icon-bg);
+      color: var(--text-primary);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
-      transition: all 0.25s ease;
-    }
-
-    .course-card:hover .course-icon {
-      background-color: var(--obsidian);
-      color: #FFFFFF;
-      border-color: var(--obsidian);
+      font-size: 18px;
     }
 
     .course-title {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--obsidian);
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
       margin-bottom: 10px;
     }
 
     .course-desc {
-      font-size: 0.94rem;
-      color: var(--text-muted);
-      margin-bottom: 32px;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
       line-height: 1.65;
       flex-grow: 1;
     }
 
-    /* Refined Action Link/Button */
+    /* Minimal Monochrome Action Button */
     .btn {
       display: inline-flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 8px;
       width: 100%;
       text-decoration: none;
-      background-color: var(--bg-primary);
-      color: var(--obsidian);
-      border: 1px solid var(--border-light);
-      padding: 12px 18px;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all 0.2s ease;
+      background-color: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     }
 
-    .btn i {
-      font-size: 0.8rem;
-      transition: transform 0.2s ease;
-    }
-
-    .course-card:hover .btn {
-      background-color: var(--obsidian);
+    .btn:hover {
+      background-color: var(--btn-bg);
       color: #FFFFFF;
-      border-color: var(--obsidian);
-    }
-
-    .course-card:hover .btn i {
-      transform: translateX(4px);
+      border-color: var(--btn-bg);
     }
 
     @media (max-width: 640px) {
       header {
-        padding: 64px 20px 80px;
+        padding: 60px 20px 76px;
       }
       header h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
       }
       .container {
-        margin-top: -36px;
+        margin-top: -32px;
         grid-template-columns: 1fr;
       }
     }
@@ -211,7 +191,7 @@
           Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -222,7 +202,7 @@
           Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -233,7 +213,7 @@
           Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -244,7 +224,7 @@
           Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -255,7 +235,7 @@
           Become industry-ready with Statistical Analysis, Python, Power BI, MySQL, and real-time business intelligence projects.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -266,7 +246,7 @@
           Become industry-ready with Performance Marketing, SEO, Meta Ads, and real-time growth analytics campaigns.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
 
     <div class="course-card">
@@ -277,7 +257,7 @@
           Bridge software engineering and client architecture—deploying custom enterprise solutions, APIs, and AI workflows directly in production.
         </div>
       </div>
-      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+      <a href="#" class="btn">Enroll Now</a>
     </div>
   </div>
 
