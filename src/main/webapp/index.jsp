@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Softronix Courses Demo</title>
-  <link rel="stylesheet" href="https://cloudflare.com">
+  <title>Softronix IT Training Courses</title>
+  
+  <!-- Modern Geometric & Sans Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com" rel="stylesheet">
   
+  <!-- Working FontAwesome CDN for Crisp Icons -->
+  <link rel="stylesheet" href="https://cloudflare.com">
+  
   <style>
+    :root {
+      --bg-primary: #FAFAFA;
+      --surface: #FFFFFF;
+      --obsidian: #09090B;
+      --text-main: #18181B;
+      --text-muted: #52525B;
+      --border-light: #E4E4E7;
+      --accent: #2563EB;
+      --accent-soft: #EFF6FF;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -15,256 +32,164 @@
     }
 
     body {
-      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f8fafc;
-      background-image: 
-        radial-gradient(at 0% 0%, rgba(29, 99, 220, 0.04) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(11, 37, 69, 0.04) 0px, transparent 50%),
-        radial-gradient(#cbd5e1 0.8px, transparent 0.8px);
-      background-size: 100% 100%, 100% 100%, 26px 26px;
-      color: #0f172a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Ultra-Elite Executive Header */
+    /* Elite Minimalist Header */
     header {
-      position: relative;
-      background: radial-gradient(ellipse at top, #13386e 0%, #0b2545 55%, #061529 100%);
-      color: #ffffff;
-      padding: 86px 20px 116px;
+      background-color: var(--obsidian);
+      color: #FFFFFF;
+      padding: 88px 24px 104px;
       text-align: center;
-      border-bottom: 1px solid rgba(56, 189, 248, 0.25);
-      overflow: hidden;
+      position: relative;
+      background-image: radial-gradient(circle at 50% 0%, #1E293B 0%, #09090B 70%);
     }
 
-    /* Subtle Architectural Grid Overlay */
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-      background-size: 44px 44px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 20%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 20%, transparent 100%);
-      pointer-events: none;
-    }
-
-    /* Soft Spotlight Glow */
-    header::after {
-      content: "";
-      position: absolute;
-      top: -140px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 680px;
-      height: 320px;
-      background: radial-gradient(circle, rgba(29, 99, 220, 0.45) 0%, transparent 70%);
-      filter: blur(45px);
-      pointer-events: none;
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #93C5FD;
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
     }
 
     header h1 {
-      position: relative;
-      z-index: 1;
-      font-size: clamp(2.1rem, 4vw, 3rem);
-      font-weight: 800;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 700;
       letter-spacing: -0.03em;
       margin-bottom: 14px;
-      background: linear-gradient(135deg, #ffffff 35%, #bae6fd 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      line-height: 1.2;
     }
 
     header p {
-      position: relative;
-      z-index: 1;
-      font-size: 1.12rem;
-      color: #cbd5e1;
-      max-width: 600px;
+      font-size: 1.1rem;
+      color: #A1A1AA;
+      max-width: 540px;
       margin: 0 auto;
       font-weight: 400;
-      letter-spacing: -0.01em;
     }
 
+    /* Clean Grid Layout */
     .container {
-      position: relative;
-      z-index: 2;
       max-width: 1180px;
-      margin: -62px auto 85px;
+      margin: -48px auto 96px;
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-      gap: 28px;
+      gap: 24px;
     }
 
-    /* Luxury Card Design */
+    /* Minimalist Luxury Cards */
     .course-card {
-      position: relative;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(226, 232, 240, 0.9);
-      border-radius: 18px;
-      padding: 36px 30px;
-      text-align: center;
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 36px 32px;
+      text-align: left;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 
-        0 4px 6px -1px rgba(11, 37, 69, 0.03),
-        0 14px 30px -6px rgba(11, 37, 69, 0.08);
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
-                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease;
-      overflow: hidden;
-    }
-
-    /* Top Illuminated Bar */
-    .course-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, #1d63dc, #38bdf8, #1d63dc);
-      background-size: 200% 100%;
-      opacity: 0.85;
-      transition: opacity 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .course-card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(29, 99, 220, 0.3);
-      box-shadow: 
-        0 24px 44px -12px rgba(11, 37, 69, 0.16),
-        0 0 0 1px rgba(29, 99, 220, 0.12);
+      transform: translateY(-4px);
+      border-color: #CBD5E1;
+      box-shadow: 0 20px 32px -12px rgba(9, 9, 11, 0.08);
     }
 
-    .course-card:hover::before {
-      opacity: 1;
-    }
-
-    /* Sculpted Icon Container */
     .course-icon {
-      width: 66px;
-      height: 66px;
-      margin: 0 auto 22px;
-      border-radius: 16px;
-      background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
-      border: 1px solid rgba(29, 99, 220, 0.15);
-      color: #1d63dc;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      color: var(--obsidian);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 26px;
-      box-shadow: 
-        inset 0 2px 4px rgba(255, 255, 255, 0.8),
-        0 6px 14px rgba(29, 99, 220, 0.08);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      font-size: 20px;
+      transition: all 0.25s ease;
     }
 
     .course-card:hover .course-icon {
-      background: linear-gradient(135deg, #1d63dc 0%, #0b2545 100%);
-      color: #ffffff;
-      border-color: transparent;
-      transform: scale(1.07) translateY(-2px);
-      box-shadow: 0 12px 24px rgba(29, 99, 220, 0.28);
+      background-color: var(--obsidian);
+      color: #FFFFFF;
+      border-color: var(--obsidian);
     }
 
     .course-title {
-      font-size: 1.35rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.25rem;
       font-weight: 700;
-      color: #0b2545;
       letter-spacing: -0.02em;
-      margin-bottom: 12px;
-      transition: color 0.25s ease;
-    }
-
-    .course-card:hover .course-title {
-      color: #1d63dc;
+      color: var(--obsidian);
+      margin-bottom: 10px;
     }
 
     .course-desc {
-      font-size: 0.96rem;
-      color: #475569;
-      margin-bottom: 30px;
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
       line-height: 1.65;
       flex-grow: 1;
     }
 
-    /* Executive Shimmer CTA Button */
+    /* Refined Action Link/Button */
     .btn {
-      position: relative;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
+      justify-content: space-between;
       width: 100%;
       text-decoration: none;
-      background: linear-gradient(135deg, #1d63dc 0%, #154bb0 100%);
-      color: #ffffff;
-      padding: 13px 26px;
+      background-color: var(--bg-primary);
+      color: var(--obsidian);
+      border: 1px solid var(--border-light);
+      padding: 12px 18px;
       border-radius: 10px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      letter-spacing: 0.01em;
-      box-shadow: 
-        0 4px 12px rgba(29, 99, 220, 0.24),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-      transition: all 0.3s ease;
-      overflow: hidden;
+      transition: all 0.2s ease;
     }
 
-    /* Light sweep animation on button hover */
-    .btn::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 60%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-      transform: skewX(-20deg);
-      transition: left 0.55s ease;
+    .btn i {
+      font-size: 0.8rem;
+      transition: transform 0.2s ease;
     }
 
-    .btn::after {
-      content: "→";
-      font-size: 1.05rem;
-      transition: transform 0.25s ease;
+    .course-card:hover .btn {
+      background-color: var(--obsidian);
+      color: #FFFFFF;
+      border-color: var(--obsidian);
     }
 
-    .btn:hover {
-      background: linear-gradient(135deg, #154bb0 0%, #0b2545 100%);
-      box-shadow: 0 8px 20px rgba(11, 37, 69, 0.3);
-      transform: translateY(-1px);
-    }
-
-    .btn:hover::before {
-      left: 140%;
-    }
-
-    .btn:hover::after {
+    .course-card:hover .btn i {
       transform: translateX(4px);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       header {
-        padding: 64px 20px 88px;
+        padding: 64px 20px 80px;
       }
       header h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
       .container {
-        margin-top: -42px;
-        gap: 20px;
-      }
-      .course-card {
-        padding: 28px 22px;
+        margin-top: -36px;
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -272,69 +197,89 @@
 <body>
 
   <header>
-    <h1> Softronix IT Training Courses</h1>
-    <p>Upgrade your career with our industry-ready training programs</p>
+    <span class="badge">Career Accelerator</span>
+    <h1>Softronix IT Training Courses</h1>
+    <p>Upgrade your career with our industry-ready, mentor-led engineering programs.</p>
   </header>
 
   <div class="container">
     <div class="course-card">
-      <div class="course-icon"><i class="fab fa-java"></i></div>
-      <div class="course-title">Java Full Stack Development</div>
-      <div class="course-desc">
-        Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
+      <div>
+        <div class="course-icon"><i class="fab fa-java"></i></div>
+        <div class="course-title">Java Full Stack Development</div>
+        <div class="course-desc">
+          Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div class="course-card">
-      <div class="course-icon"><i class="fab fa-python"></i></div>
-      <div class="course-title">Python Full Stack Development</div>
-      <div class="course-desc">
-        Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
+      <div>
+        <div class="course-icon"><i class="fab fa-python"></i></div>
+        <div class="course-title">Python Full Stack Development</div>
+        <div class="course-desc">
+          Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div class="course-card">
-      <div class="course-icon"><i class="fas fa-cloud"></i></div>
-      <div class="course-title">DevOps with AWS</div>
-      <div class="course-desc">
-        Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
+      <div>
+        <div class="course-icon"><i class="fas fa-cloud"></i></div>
+        <div class="course-title">DevOps with AWS</div>
+        <div class="course-desc">
+          Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div class="course-card">
-      <div class="course-icon"><i class="fas fa-robot"></i></div>
-      <div class="course-title">Data Science & AI</div>
-      <div class="course-desc">
-        Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
+      <div>
+        <div class="course-icon"><i class="fas fa-brain"></i></div>
+        <div class="course-title">Data Science & AI</div>
+        <div class="course-desc">
+          Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div class="course-card">
-      <div class="course-icon"><i class="fas fa-robot"></i></div>
-      <div class="course-title">Data Analytic</div>
-      <div class="course-desc">
-        Become industry-ready with Machine Learning, Python, Power BI, MY SQL, and real-time data projects.
+      <div>
+        <div class="course-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="course-title">Data Analytics</div>
+        <div class="course-desc">
+          Become industry-ready with Statistical Analysis, Python, Power BI, MySQL, and real-time business intelligence projects.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
-     <div class="course-card">
-      <div class="course-icon"><i class="fas fa-robot"></i></div>
-      <div class="course-title">Digital Marketing</div>
-      <div class="course-desc">
-        Become industry-ready with Digital Expert, SEO, Meta Expert, and real-time data projects.
+    <div class="course-card">
+      <div>
+        <div class="course-icon"><i class="fas fa-bullhorn"></i></div>
+        <div class="course-title">Digital Marketing</div>
+        <div class="course-desc">
+          Become industry-ready with Performance Marketing, SEO, Meta Ads, and real-time growth analytics campaigns.
+        </div>
       </div>
-      <a href="#" class="btn">Enroll Now</a>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <!-- my changes -->
-      <div class="course-card">
-      <div class="course-icon"><i class="fas fa-robot"></i></div>
-      <div class="course-title">Fordward deploy engineering</div>
-      <div class="course-desc">
-        Become industry-ready with Digital Expert, SEO, Meta Expert, and real-time data projects.
+    <div class="course-card">
+      <div>
+        <div class="course-icon"><i class="fas fa-rocket"></i></div>
+        <div class="course-title">Forward Deployed Engineering</div>
+        <div class="course-desc">
+          Bridge software engineering and client architecture—deploying custom enterprise solutions, APIs, and AI workflows directly in production.
+        </div>
       </div>
+      <a href="#" class="btn">Enroll Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+</body>
+</html>
