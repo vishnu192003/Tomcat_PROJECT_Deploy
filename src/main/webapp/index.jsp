@@ -185,7 +185,7 @@
   <div class="container">
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Java Full Stack Development" class="course-image">
+        <img src="./1854646.jpg" alt="Java Full Stack Development" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Java Full Stack Development</div>
@@ -200,7 +200,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Python Full Stack Development" class="course-image">
+        <img src="./cristiano-ronaldo-5120x2880-9628.jpg" alt="Python Full Stack Development" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Python Full Stack Development</div>
@@ -215,7 +215,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="DevOps with AWS" class="course-image">
+        <img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="DevOps with AWS" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">DevOps with AWS</div>
@@ -230,7 +230,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Data Science & AI" class="course-image">
+        <img src="./wallhaven-0pq9m4.jpg" alt="Data Science & AI" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Data Science & AI</div>
@@ -245,7 +245,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Data Analytics" class="course-image">
+        <img src="./wallpaperflare.com_wallpaper.jpg" alt="Data Analytics" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Data Analytics</div>
@@ -260,7 +260,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Digital Marketing" class="course-image">
+        <img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="Digital Marketing" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Digital Marketing</div>
@@ -275,7 +275,7 @@
 
     <div class="course-card">
       <div>
-        <img src="https://unsplash.com" alt="Forward Deployed Engineering" class="course-image">
+        <img src="./wallhaven-0pq9m4.jpg" alt="Forward Deployed Engineering" class="course-image">
         <div class="card-body">
           <div>
             <div class="course-title">Forward Deployed Engineering</div>
