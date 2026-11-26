@@ -189,7 +189,7 @@
   <div class="container">
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./1854646.jpg" alt="Java"></div>
+        <div class="course-icon"><img src="https://jsdelivr.net" alt="Java"></div>
         <div class="course-title">Java Full Stack Development</div>
         <div class="course-desc">
           Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
@@ -200,7 +200,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./cristiano-ronaldo-5120x2880-9628.jpg" alt="Python"></div>
+        <div class="course-icon"><img src="https://jsdelivr.net" alt="Python"></div>
         <div class="course-title">Python Full Stack Development</div>
         <div class="course-desc">
           Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
@@ -211,7 +211,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="DevOps AWS"></div>
+        <div class="course-icon"><img src="https://jsdelivr.net" alt="DevOps AWS"></div>
         <div class="course-title">DevOps with AWS</div>
         <div class="course-desc">
           Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
@@ -222,7 +222,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./wallhaven-0pq9m4.jpg" alt="Data Science & AI"></div>
+        <div class="course-icon"><img src="https://flaticon.com" alt="Data Science & AI"></div>
         <div class="course-title">Data Science & AI</div>
         <div class="course-desc">
           Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
@@ -233,7 +233,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./wallpaperflare.com_wallpaper.jpg" alt="Data Analytics"></div>
+        <div class="course-icon"><img src="https://flaticon.com" alt="Data Analytics"></div>
         <div class="course-title">Data Analytics</div>
         <div class="course-desc">
           Become industry-ready with Statistical Analysis, Python, Power BI, MySQL, and real-time business intelligence projects.
@@ -244,7 +244,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./cristiano-ronaldo-5120x2880-9628.jpg" alt="Digital Marketing"></div>
+        <div class="course-icon"><img src="https://flaticon.com" alt="Digital Marketing"></div>
         <div class="course-title">Digital Marketing</div>
         <div class="course-desc">
           Become industry-ready with Performance Marketing, SEO, Meta Ads, and real-time growth analytics campaigns.
@@ -255,7 +255,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="Forward Deployed Engineering"></div>
+        <div class="course-icon"><img src="https://flaticon.com" alt="Forward Deployed Engineering"></div>
         <div class="course-title">Forward Deployed Engineering</div>
         <div class="course-desc">
           Bridge software engineering and client architecture—deploying custom enterprise solutions, APIs, and AI workflows directly in production.
