@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Softronix IT Training Courses</title>
   
-  <!-- Fixed Google Fonts URLs -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
-  
-  <!-- Google Material Symbols (Google Icons) -->
-  <link href="https://googleapis.com" rel="stylesheet" />
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="https://cloudflare.com">
   
   <style>
     :root {
@@ -83,7 +80,7 @@
     /* Clean Grid Placed Equally Below Header */
     .container {
       max-width: 1160px;
-      margin: 56px auto 96px;
+      margin: 56px auto 96px; /* Equal top spacing below header */
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -117,11 +114,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 18px;
     }
 
-    /* Google Icon Sizing */
-    .course-icon .material-symbols-rounded {
-      font-size: 22px;
+    .course-icon img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
     }
 
     .course-title {
@@ -190,7 +189,7 @@
   <div class="container">
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">coffee</span></div>
+        <div class="course-icon"><img src="./1854646.jpg" alt="Java"></div>
         <div class="course-title">Java Full Stack Development</div>
         <div class="course-desc">
           Master Core Java, Spring Boot, Microservices, Angular, React & more to become a job-ready full-stack developer.
@@ -201,7 +200,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">terminal</span></div>
+        <div class="course-icon"><img src="./cristiano-ronaldo-5120x2880-9628.jpg" alt="Python"></div>
         <div class="course-title">Python Full Stack Development</div>
         <div class="course-desc">
           Learn Python, Django, REST APIs, React, and advanced deployment strategies for real-world projects.
@@ -212,7 +211,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">cloud_sync</span></div>
+        <div class="course-icon"><img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="DevOps AWS"></div>
         <div class="course-title">DevOps with AWS</div>
         <div class="course-desc">
           Get hands-on with Docker, Kubernetes, Jenkins, Terraform & AWS Cloud to launch your DevOps career.
@@ -223,7 +222,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">psychology</span></div>
+        <div class="course-icon"><img src="./wallhaven-0pq9m4.jpg" alt="Data Science & AI"></div>
         <div class="course-title">Data Science & AI</div>
         <div class="course-desc">
           Become industry-ready with Machine Learning, Python, Deep Learning, NLP, and real-time data projects.
@@ -234,7 +233,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">monitoring</span></div>
+        <div class="course-icon"><img src="./wallpaperflare.com_wallpaper.jpg" alt="Data Analytics"></div>
         <div class="course-title">Data Analytics</div>
         <div class="course-desc">
           Become industry-ready with Statistical Analysis, Python, Power BI, MySQL, and real-time business intelligence projects.
@@ -245,7 +244,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">campaign</span></div>
+        <div class="course-icon"><img src="./cristiano-ronaldo-5120x2880-9628.jpg" alt="Digital Marketing"></div>
         <div class="course-title">Digital Marketing</div>
         <div class="course-desc">
           Become industry-ready with Performance Marketing, SEO, Meta Ads, and real-time growth analytics campaigns.
@@ -256,7 +255,7 @@
 
     <div class="course-card">
       <div>
-        <div class="course-icon"><span class="material-symbols-rounded">rocket_launch</span></div>
+        <div class="course-icon"><img src="./jon-snow-kit-harington-game-of-thrones-hbo-series-tv-series-3840x2160-1777.jpg" alt="Forward Deployed Engineering"></div>
         <div class="course-title">Forward Deployed Engineering</div>
         <div class="course-desc">
           Bridge software engineering and client architecture—deploying custom enterprise solutions, APIs, and AI workflows directly in production.
