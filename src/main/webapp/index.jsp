@@ -4,25 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Softronix Courses Demo</title>
-  
-  <!-- Proper Google Fonts & Font Awesome Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com" rel="stylesheet">
   <link rel="stylesheet" href="https://cloudflare.com">
+  <link href="https://googleapis.com" rel="stylesheet">
   
   <style>
-    :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --accent: #38bdf8;
-      --bg-dark: #060d1f;
-      --bg-light: #f8fafc;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --card-border: rgba(226, 232, 240, 0.85);
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -30,94 +15,98 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: var(--bg-light);
-      background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
-      background-size: 24px 24px;
-      color: var(--text-main);
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f8fafc;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(29, 99, 220, 0.04) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(11, 37, 69, 0.04) 0px, transparent 50%),
+        radial-gradient(#cbd5e1 0.8px, transparent 0.8px);
+      background-size: 100% 100%, 100% 100%, 26px 26px;
+      color: #0f172a;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Elite Dark Luxury Header */
+    /* Ultra-Elite Executive Header */
     header {
       position: relative;
-      background: radial-gradient(circle at top center, #132a5e 0%, #091533 55%, var(--bg-dark) 100%);
+      background: radial-gradient(ellipse at top, #13386e 0%, #0b2545 55%, #061529 100%);
       color: #ffffff;
-      padding: 88px 24px 120px;
+      padding: 86px 20px 116px;
       text-align: center;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.25);
       overflow: hidden;
     }
 
-    /* Subtle Tech Grid Overlay in Header */
+    /* Subtle Architectural Grid Overlay */
     header::before {
       content: "";
       position: absolute;
       inset: 0;
       background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-      background-size: 40px 40px;
-      mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+        linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 20%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 20%, transparent 100%);
       pointer-events: none;
     }
 
-    /* Glowing Aura Effect */
+    /* Soft Spotlight Glow */
     header::after {
       content: "";
       position: absolute;
-      top: -120px;
+      top: -140px;
       left: 50%;
       transform: translateX(-50%);
-      width: 600px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.22) 0%, transparent 70%);
-      filter: blur(40px);
+      width: 680px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(29, 99, 220, 0.45) 0%, transparent 70%);
+      filter: blur(45px);
       pointer-events: none;
     }
 
     header h1 {
       position: relative;
       z-index: 1;
-      font-size: clamp(2.1rem, 4vw, 3.1rem);
+      font-size: clamp(2.1rem, 4vw, 3rem);
       font-weight: 800;
       letter-spacing: -0.03em;
       margin-bottom: 14px;
-      background: linear-gradient(135deg, #ffffff 30%, #93c5fd 100%);
+      background: linear-gradient(135deg, #ffffff 35%, #bae6fd 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     header p {
       position: relative;
       z-index: 1;
-      font-size: 1.125rem;
+      font-size: 1.12rem;
       color: #cbd5e1;
-      max-width: 580px;
+      max-width: 600px;
       margin: 0 auto;
       font-weight: 400;
       letter-spacing: -0.01em;
     }
 
-    /* Grid Layout */
     .container {
       position: relative;
       z-index: 2;
-      max-width: 1200px;
-      margin: -64px auto 90px;
+      max-width: 1180px;
+      margin: -62px auto 85px;
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
       gap: 28px;
     }
 
-    /* Elite Course Card */
+    /* Luxury Card Design */
     .course-card {
       position: relative;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
       border-radius: 18px;
       padding: 36px 30px;
       text-align: center;
@@ -125,13 +114,15 @@
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 
-        0 4px 6px -1px rgba(15, 23, 42, 0.03),
-        0 12px 28px -6px rgba(15, 23, 42, 0.07);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        0 4px 6px -1px rgba(11, 37, 69, 0.03),
+        0 14px 30px -6px rgba(11, 37, 69, 0.08);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s ease;
       overflow: hidden;
     }
 
-    /* Top Gradient Accent Bar on Hover */
+    /* Top Illuminated Bar */
     .course-card::before {
       content: "";
       position: absolute;
@@ -139,80 +130,106 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, #2563eb, #38bdf8);
-      opacity: 0;
-      transition: opacity 0.35s ease;
+      background: linear-gradient(90deg, #1d63dc, #38bdf8, #1d63dc);
+      background-size: 200% 100%;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
     }
 
     .course-card:hover {
       transform: translateY(-8px);
-      border-color: rgba(37, 99, 235, 0.25);
+      border-color: rgba(29, 99, 220, 0.3);
       box-shadow: 
-        0 20px 38px -10px rgba(15, 23, 42, 0.14),
-        0 0 0 1px rgba(37, 99, 235, 0.1);
+        0 24px 44px -12px rgba(11, 37, 69, 0.16),
+        0 0 0 1px rgba(29, 99, 220, 0.12);
     }
 
     .course-card:hover::before {
       opacity: 1;
     }
 
-    /* Elevated Icon Badge */
+    /* Sculpted Icon Container */
     .course-icon {
-      width: 68px;
-      height: 68px;
-      margin: 0 auto 24px;
+      width: 66px;
+      height: 66px;
+      margin: 0 auto 22px;
       border-radius: 16px;
-      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-      border: 1px solid rgba(37, 99, 235, 0.12);
-      color: var(--primary);
+      background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
+      border: 1px solid rgba(29, 99, 220, 0.15);
+      color: #1d63dc;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.08);
+      font-size: 26px;
+      box-shadow: 
+        inset 0 2px 4px rgba(255, 255, 255, 0.8),
+        0 6px 14px rgba(29, 99, 220, 0.08);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .course-card:hover .course-icon {
-      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      background: linear-gradient(135deg, #1d63dc 0%, #0b2545 100%);
       color: #ffffff;
-      transform: scale(1.06) rotate(-3deg);
-      box-shadow: 0 12px 22px rgba(37, 99, 235, 0.28);
+      border-color: transparent;
+      transform: scale(1.07) translateY(-2px);
+      box-shadow: 0 12px 24px rgba(29, 99, 220, 0.28);
     }
 
     .course-title {
       font-size: 1.35rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: #0b2545;
       letter-spacing: -0.02em;
       margin-bottom: 12px;
+      transition: color 0.25s ease;
+    }
+
+    .course-card:hover .course-title {
+      color: #1d63dc;
     }
 
     .course-desc {
       font-size: 0.96rem;
-      color: var(--text-muted);
+      color: #475569;
       margin-bottom: 30px;
       line-height: 1.65;
       flex-grow: 1;
     }
 
-    /* Premium Action Button */
+    /* Executive Shimmer CTA Button */
     .btn {
+      position: relative;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       width: 100%;
       text-decoration: none;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(135deg, #1d63dc 0%, #154bb0 100%);
       color: #ffffff;
       padding: 13px 26px;
       border-radius: 10px;
       font-size: 0.95rem;
       font-weight: 600;
       letter-spacing: 0.01em;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+      box-shadow: 
+        0 4px 12px rgba(29, 99, 220, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
       transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    /* Light sweep animation on button hover */
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.55s ease;
     }
 
     .btn::after {
@@ -221,9 +238,14 @@
       transition: transform 0.25s ease;
     }
 
-    .course-card:hover .btn {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    .btn:hover {
+      background: linear-gradient(135deg, #154bb0 0%, #0b2545 100%);
+      box-shadow: 0 8px 20px rgba(11, 37, 69, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn:hover::before {
+      left: 140%;
     }
 
     .btn:hover::after {
@@ -232,10 +254,13 @@
 
     @media (max-width: 600px) {
       header {
-        padding: 64px 20px 90px;
+        padding: 64px 20px 88px;
+      }
+      header h1 {
+        font-size: 1.9rem;
       }
       .container {
-        margin-top: -45px;
+        margin-top: -42px;
         gap: 20px;
       }
       .course-card {
@@ -247,7 +272,7 @@
 <body>
 
   <header>
-    <h1>Softronix IT Training Courses</h1>
+    <h1> Softronix IT Training Courses</h1>
     <p>Upgrade your career with our industry-ready training programs</p>
   </header>
 
@@ -297,7 +322,7 @@
       <a href="#" class="btn">Enroll Now</a>
     </div>
 
-    <div class="course-card">
+     <div class="course-card">
       <div class="course-icon"><i class="fas fa-robot"></i></div>
       <div class="course-title">Digital Marketing</div>
       <div class="course-desc">
@@ -307,16 +332,9 @@
     </div>
 
     <!-- my changes -->
-    <div class="course-card">
+      <div class="course-card">
       <div class="course-icon"><i class="fas fa-robot"></i></div>
       <div class="course-title">Fordward deploy engineering</div>
       <div class="course-desc">
         Become industry-ready with Digital Expert, SEO, Meta Expert, and real-time data projects.
       </div>
-      <a href="#" class="btn">Enroll Now</a>
-    </div>
-    <!-- my changes -->
-  </div>
-
-</body>
-</html>
