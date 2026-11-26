@@ -21,7 +21,6 @@
       --border-hover: #A1A1AA;   /* Subtle Focus Border */
       --icon-bg: #F3F3F1;        /* Neutral Warm Gray */
       --btn-bg: #18181B;         /* Minimal Charcoal Button */
-      --btn-hover: #323236;      /* Soft Hover Tint */
     }
 
     * {
@@ -42,7 +41,7 @@
     header {
       background-color: var(--header-bg);
       color: #FFFFFF;
-      padding: 80px 24px 96px;
+      padding: 72px 24px;
       text-align: center;
       border-bottom: 1px solid #27272A;
     }
@@ -78,14 +77,14 @@
       font-weight: 400;
     }
 
-    /* Clean Grid */
+    /* Clean Grid Placed Equally Below Header */
     .container {
       max-width: 1160px;
-      margin: -44px auto 90px;
+      margin: 56px auto 96px; /* Equal top spacing below header */
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-      gap: 20px;
+      gap: 24px;
     }
 
     /* Stable & Ultra-Minimal Cards */
@@ -98,7 +97,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      /* No movement, only subtle border transition */
       transition: border-color 0.2s ease;
     }
 
@@ -162,13 +160,13 @@
 
     @media (max-width: 640px) {
       header {
-        padding: 60px 20px 76px;
+        padding: 56px 20px;
       }
       header h1 {
         font-size: 1.9rem;
       }
       .container {
-        margin-top: -32px;
+        margin: 36px auto 72px;
         grid-template-columns: 1fr;
       }
     }
